@@ -22,7 +22,7 @@ function pintarServicios(idContenedor, conBoton) {
       html += "<li>" + r + "</li>";
     });
     html += "  </ul>";
-    html += '  <p class="precio">Desde ' + formatearPrecio(s.desde) + "</p>";
+    html += '  <p class="precio">' + formatearPrecio(s.desde) + "</p>";
 
     // En la página de servicios mostramos el botón de cotización
     if (conBoton) {

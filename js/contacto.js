@@ -23,11 +23,11 @@ function mostrarResumen() {
 
   lista.forEach(function (item) {
     total += item.precio;
-    html += "<li><span>" + item.nombre + "</span><span>Desde " + formatearPrecio(item.precio) + "</span></li>";
+    html += "<li><span>" + item.nombre + "</span><span>" + formatearPrecio(item.precio) + "</span></li>";
   });
 
   html += "</ul>";
-  html += "<p class='precio' style='margin-top:1rem'>Estimado total: desde " + formatearPrecio(total) + "</p>";
+  html += "<p class='precio' style='margin-top:1rem'>Total: " + formatearPrecio(total) + "</p>";
   html += "<button class='boton boton-secundario' onclick='limpiar()'>Vaciar cotización</button>";
 
   zona.innerHTML = html;
