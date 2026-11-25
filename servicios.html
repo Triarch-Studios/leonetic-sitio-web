@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios | Leonetic</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
+    <header class="barra">
+      <nav class="contenedor">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="Logo Leonetic" />
+          Leonetic
+        </a>
+        <button class="hamburguesa" onclick="alternarMenu()">☰</button>
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html" class="activo">Servicios</a></li>
+          <li><a href="celulares.html">Celulares</a></li>
+          <li>
+            <a href="contacto.html">Contacto
+              <span id="contador" style="background:var(--naranja);border-radius:50%;padding:1px 7px;font-size:0.8rem;display:none;"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== ENCABEZADO DE LA PÁGINA ===== -->
+    <section class="hero" style="padding:3rem 0">
+      <div class="contenedor">
+        <span class="saludo" id="saludo" style="display:none"></span>
+        <h1>Nuestros servicios</h1>
+        <p>Agrega los servicios que necesitas y pide tu cotización.</p>
+      </div>
+    </section>
+
+    <!-- ===== CATÁLOGO DE SERVICIOS (generado con JavaScript) ===== -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Elige tu reparación</h2>
+        <p class="subtitulo">Los precios son estimados "desde". El diagnóstico es gratis.</p>
+        <!-- Este contenedor se llena desde servicios.js, con botones -->
+        <div class="grilla" id="servicios-lista"></div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="pie">
+      <div class="contenedor">
+        <div class="columnas">
+          <div>
+            <h4>Leonetic</h4>
+            <p>Reparación de computadores, tablets y teléfonos.</p>
+          </div>
+          <div>
+            <h4>Páginas</h4>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="celulares.html">Celulares</a>
+            <a href="contacto.html">Contacto</a>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <a href="tel:+573000000000">Tel: 300 000 0000</a>
+            <a href="mailto:hola@leonetic.com">hola@leonetic.com</a>
+            <p>Lun a Sáb, 9:00 a.m. - 6:00 p.m.</p>
+          </div>
+        </div>
+        <div class="derechos">
+          &copy; <span id="anio"></span> Leonetic. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== Scripts ===== -->
+    <script src="js/datos.js"></script>
+    <script src="js/comun.js"></script>
+    <script src="js/servicios.js"></script>
+    <script>
+      // Pintamos los servicios CON botón de "Agregar a cotización"
+      pintarServicios("servicios-lista", true);
+    </script>
+  </body>
+</html>
