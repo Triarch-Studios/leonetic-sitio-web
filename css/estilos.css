@@ -207,15 +207,19 @@ h2.titulo-seccion {
   margin-bottom: 0.5rem;
 }
 
-/* Iconos SVG minimalistas (trazo, hechos a mano) */
-.icono-svg {
-  color: var(--naranja);
+/* Recuadro con la inicial (icono simple del servicio) */
+.badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: var(--naranja);
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
   margin-bottom: 0.7rem;
-}
-
-.icono-svg svg {
-  width: 40px;
-  height: 40px;
 }
 
 .tarjeta h3 {
