@@ -252,6 +252,23 @@ h2.titulo-seccion {
   margin-bottom: 1rem;
 }
 
+/* Tarjeta de testimonio */
+.comentario {
+  font-style: italic;
+  color: #5a6b7b;
+  margin-bottom: 1rem;
+}
+
+.autor {
+  font-weight: bold;
+  color: var(--azul-oscuro);
+}
+
+.equipo-cliente {
+  color: var(--naranja);
+  font-size: 0.9rem;
+}
+
 /* ============================================================
    FORMULARIO
    ============================================================ */

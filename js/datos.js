@@ -91,6 +91,28 @@ const celulares = [
   },
 ];
 
+// Testimonios de clientes (se muestran con JavaScript en el inicio)
+const testimonios = [
+  {
+    nombre: "Carolina Ríos",
+    equipo: "Portátil HP",
+    comentario:
+      "Me cambiaron la pantalla el mismo día y quedó como nuevo. Muy honestos con el precio.",
+  },
+  {
+    nombre: "Andrés Gómez",
+    equipo: "iPhone 11",
+    comentario:
+      "Le hicieron mantenimiento y cambio de batería. Excelente atención y garantía por escrito.",
+  },
+  {
+    nombre: "Laura Martínez",
+    equipo: "Tablet Samsung",
+    comentario:
+      "Pensé que ya no servía y la recuperaron. Los recomiendo totalmente.",
+  },
+];
+
 // Función para dar formato de precio en pesos colombianos
 function formatearPrecio(valor) {
   return "$" + valor.toLocaleString("es-CO");
